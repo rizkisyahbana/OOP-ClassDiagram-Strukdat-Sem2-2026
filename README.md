@@ -4,69 +4,10 @@
 Program ini dibuat untuk mensimulasikan sistem peminjaman payung dan jas hujan di kampus. Saat hujan turun secara tiba-tiba, mahasiswa dapat meminjam perlengkapan hujan yang tersedia. Program ini mencatat data peminjam, jenis barang yang dipinjam, lama peminjaman, keterlambatan, serta denda yang harus dibayar. Selain itu, terdapat dua jenis member, yaitu member biasa dan member prioritas, yang memiliki perbedaan pada perhitungan denda.
 
 ## Class Diagram
-```mermaid
-classDiagram
-    class Peminjam {
-        - String nama
-        - String nrp
-        + getNama() String
-        + getNrp() String
-        + getTipeMember() String
-        + hitungDiskonDenda(double denda) double
-    }
-
-    class MemberBiasa {
-        + getTipeMember() String
-        + hitungDiskonDenda(double denda) double
-    }
-
-    class MemberPrioritas {
-        + getTipeMember() String
-        + hitungDiskonDenda(double denda) double
-    }
-
-    class ItemPinjaman {
-        <<abstract>>
-        - String kodeItem
-        - String namaItem
-        - boolean tersedia
-        + getKodeItem() String
-        + getNamaItem() String
-        + isTersedia() boolean
-        + setTersedia(boolean tersedia) void
-        + hitungDendaPerHari() double
-        + getJenis() String
-    }
-
-    class Payung {
-        - String ukuran
-        + hitungDendaPerHari() double
-        + getJenis() String
-    }
-
-    class JasHujan {
-        - String ukuran
-        + hitungDendaPerHari() double
-        + getJenis() String
-    }
-
-    class Peminjaman {
-        - Peminjam peminjam
-        - ItemPinjaman item
-        - int lamaPinjam
-        - int lamaTerlambat
-        + hitungTotalDenda() double
-        + tampilkanDetail() void
-    }
-
-    Peminjam <|-- MemberBiasa
-    Peminjam <|-- MemberPrioritas
-    ItemPinjaman <|-- Payung
-    ItemPinjaman <|-- JasHujan
-    Peminjaman --> Peminjam
-    Peminjaman --> ItemPinjaman
+```md
+## Class Diagram
+![Class Diagram](mermaid-ai-diagram-2026-03-26-070545.png)
 ```
-
 ## Kode Program Java
 Project ini terdiri dari file:
 - Main.java
