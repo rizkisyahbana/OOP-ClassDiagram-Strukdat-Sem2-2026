@@ -4,10 +4,9 @@
 Program ini dibuat untuk mensimulasikan sistem peminjaman payung dan jas hujan di kampus. Saat hujan turun secara tiba-tiba, mahasiswa dapat meminjam perlengkapan hujan yang tersedia. Program ini mencatat data peminjam, jenis barang yang dipinjam, lama peminjaman, keterlambatan, serta denda yang harus dibayar. Selain itu, terdapat dua jenis member, yaitu member biasa dan member prioritas, yang memiliki perbedaan pada perhitungan denda.
 
 ## Class Diagram
-```md
 ## Class Diagram
 ![Class Diagram](class-diagram.png)
-```
+
 ## Kode Program Java
 Project ini terdiri dari file:
 - Main.java
