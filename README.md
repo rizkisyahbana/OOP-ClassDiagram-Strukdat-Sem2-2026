@@ -6,7 +6,7 @@ Program ini dibuat untuk mensimulasikan sistem peminjaman payung dan jas hujan d
 ## Class Diagram
 ```md
 ## Class Diagram
-![Class Diagram](mermaid-ai-diagram-2026-03-26-070545.png)
+![Class Diagram](class-diagram.png)
 ```
 ## Kode Program Java
 Project ini terdiri dari file:
